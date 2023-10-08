@@ -1,0 +1,15 @@
+# Ignore system files
+.DS_Store
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore a specific directory
+/node_modules/
+
+# Ignore all .txt files in the project
+*.txt
+
+# Ignore a specific file
+secret.txt
