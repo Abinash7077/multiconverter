@@ -30,10 +30,12 @@ function App() {
         <div className="w-full flex flex-col h-full my-4">
           <label >CGPA</label>
           <input type="number" className='outline-none border-[2px] pl-2 my-2 rounded border-solid border-gray-300' placeholder='Enter CGPA'  onChange={(e)=>setCgpa(e.target.value)} value={cgpa}  />
-          <p>{error}</p>
+          <p className='text-red-700'>{error}</p>
           <button className='bg-green-700 text-white my-2' onClick={handleClick}>Calculate</button>
           <p>Show Results</p>
-          <p>Percentage :- <span>{percentage}</span></p>
+          <p className='mb-2'>Percentage :- <span>{percentage}</span></p>
+          <hr />
+          <p className='mt-2'>CGPA * 9.5 = Percentage</p>
         </div>
       </div>
     </div>
