@@ -13,6 +13,7 @@ function App() {
   const handleClick=()=>{
    if(cgpa===0 || cgpa.trim()===''){
     setError('Pls enter CGPA')
+    setPercentage(0)
    }
    else{
     setError('')
